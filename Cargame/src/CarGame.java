@@ -81,17 +81,17 @@ public class CarGame extends JFrame implements KeyListener,ActionListener
 	}
 	///for  road
 	
-	tree1=new ImageIcon("tree1.png");
+	tree1=new ImageIcon("./assets/tree1.png");
 
 	tree1.paintIcon(this, g, 0, tree1ypos);
 	num1=random.nextInt(500);
 	tree1ypos+=50;
 	
-	tree2=new ImageIcon("tree2.png");
+	tree2=new ImageIcon("./assets/tree2.png");
 	tree2.paintIcon(this, g, 0,tree2ypos );
 	tree2ypos+=50;
 	
-	tree3=new ImageIcon("tree3.png");
+	tree3=new ImageIcon("./assets/tree3.png");
 	tree3.paintIcon(this,g,0,tree3ypos);
 	tree3ypos+=50;
 	tree1.paintIcon(this,g,600,tree4ypos);
@@ -135,7 +135,7 @@ public class CarGame extends JFrame implements KeyListener,ActionListener
 	
 	
 	
-		car=new ImageIcon("gamecar1.png");
+		car=new ImageIcon("./assets/gamecar1.png");
 	
 		
 		car.paintIcon(this,g,xpos,ypos);
@@ -147,9 +147,9 @@ public class CarGame extends JFrame implements KeyListener,ActionListener
 		
 		
 		// opposite car
-		car1=new ImageIcon("gamecar2.png");
-		car2=new ImageIcon("gamecar3.png");
-		car3=new ImageIcon("gamecar4.png");
+		car1=new ImageIcon("./assets/gamecar2.png");
+		car2=new ImageIcon("./assets/gamecar3.png");
+		car3=new ImageIcon("./assets/gamecar4.png");
 		
 		car1.paintIcon(this, g, carxpos[cxpos1], y1pos);
 		car2.paintIcon(this, g, carxpos[cxpos2], y2pos);
