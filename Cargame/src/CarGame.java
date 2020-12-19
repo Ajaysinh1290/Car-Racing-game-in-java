@@ -59,7 +59,6 @@ public class CarGame extends JFrame implements KeyListener,ActionListener
 		g.setColor(Color.black);
 		g.fillRect(100, 0, 500, 700);
 		
-		
 	if(roadmove==0)
 	{
 		for(int i=0; i<=700; i+=100)
@@ -177,6 +176,7 @@ public class CarGame extends JFrame implements KeyListener,ActionListener
 			{
 				cxpos2=0;
 			}
+			
 			cxpos2=random.nextInt(5);
 			cypos2=random.nextInt(5);
 			y2pos=carypos[cypos2];
@@ -238,8 +238,7 @@ public class CarGame extends JFrame implements KeyListener,ActionListener
 				cxpos2++;
 			}
 		}
-	
-	
+		
 		if(y1pos<ypos && y1pos+175>ypos && carxpos[cxpos1]==xpos)
 		{
 		gameover=true;	
